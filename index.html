@@ -3,11 +3,15 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+<ul class="cbp_tmtimeline">
+	{% for post in site.posts %}
+	<li>
+		<time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>{{ post.date | date_to_string }}</span> <span>{{ post.date | date:"%R" }}</span></time>
+		<div class="cbp_tmicon cbp_tmicon-phone"></div>
+		<div class="cbp_tmlabel">
+			<h2>{{ post.title }}</h2>
+			<p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape radish bush tomato ricebean black-eyed pea maize eggplant. Cabbage lentil cucumber chickpea sorrel gram garbanzo plantain lotus root bok choy squash cress potato summer purslane salsify fennel horseradish dulse. Winter purslane garbanzo artichoke broccoli lentil corn okra silver beet celery quandong. Plantain salad beetroot bunya nuts black-eyed pea collard greens radish water spinach gourd chicory prairie turnip avocado sierra leone bologi.</p>
+		</div>
+	</li>
     {% endfor %}
-  </ul>
-</div>
+</ul>
