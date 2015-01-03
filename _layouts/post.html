@@ -38,7 +38,7 @@
                 <ul class="pager">
                         {% if page.previous %}
                         <li class="previous">
-                            <a href="{{ page.previous | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 前一页</a>
+                            <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 前一页</a>
                         </li>
                         {% else %}
                         <li class="previous disabled">
@@ -47,7 +47,7 @@
                         {% endif %}
                         {% if page.next %}
                         <li class="next">
-                            <a href="{{ page.next | prepend: site.baseurl | replace: '//', '/' }}">下一页 &raquo;</a>
+                            <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}">下一页 &raquo;</a>
                         </li>
                         {% else %}
                         <li class="next disabled">
