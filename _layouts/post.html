@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }}</title>
+    <title>{{ site.name }} &middot; {{ page.title }}</title>
     <link rel="shortcut icon" href="../favicon.ico">
     <!-- Bootstrap -->
     <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
@@ -34,6 +34,29 @@
       <div class="container">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-11">{{ content }}</div>
+            <nav>
+                <ul class="pager">
+                        {% if page.previous %}
+                        <li class="previous">
+                            <a href="{{ page.previous | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 前一页</a>
+                        </li>
+                        {% else %}
+                        <li class="previous disabled">
+                            <a href="#">&laquo; 前一页</a>
+                        </li>
+                        {% endif %}
+                        {% if page.next %}
+                        <li class="next">
+                            <a href="{{ page.next | prepend: site.baseurl | replace: '//', '/' }}">下一页 &raquo;</a>
+                        </li>
+                        {% else %}
+                        <li class="next disabled">
+                            <a href="#">下一页 &raquo;</a>
+                        </li>
+                        {% endif %}
+                    </li>
+                </ul>
+            </nav>
         </div>
       </div>
     </div>
