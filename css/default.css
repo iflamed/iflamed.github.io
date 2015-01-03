@@ -19,7 +19,7 @@ body{
 .author .date{
 	font-size: 25px;
 }
-.post h1{
+.post h1 a{
 	color: rgb(86, 86, 86);
 }
 .post a:hover{
