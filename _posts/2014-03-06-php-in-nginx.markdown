@@ -11,9 +11,7 @@ tags: php nginx
 
 
 ## 解释？
-> 使用了nginx try_files 来检测URL 是否可以访问，避免了使用if 的安全性问题。
-> test.example.com.conf 的配置文件支持laravel 框架的子目录部署。由于try_files 和 alias 不能同时
-> 在一个location中使用，所以location /app 中使用if 来判断请求是否可以响应。
+> 使用了nginx try_files来检测URL 是否可以访问，避免了使用if 的安全性问题。test.example.com.conf 的配置文件支持laravel 框架的子目录部署。由于try_files 和 alias 不能同时在一个location中使用，所以location /app 中使用if 来判断请求是否可以响应。
 
 ## 附带一个laravel 本身自带nginx 优雅链接的配置文件
 {% highlight nginx %}
