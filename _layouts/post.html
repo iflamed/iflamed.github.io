@@ -21,10 +21,10 @@
     <div class="head">
       <div class="container">
         <div class="row">
-            <div class="col-xs-1 avantar">
+            <div class="col-xs-1 postavantar">
               <a href="/"><img src="/avantar.png" class="img-responsive img-circle"></a>
             </div>
-            <div class="col-xs-offset-1 col-xs-11">
+            <div class="col-xs-11 title">
                 <h1>{{ page.title }}<small>{{ page.date | date_to_string }}</small></h1>
             </div>
         </div>
@@ -33,7 +33,7 @@
     <div class="content">
       <div class="container">
         <div class="row">
-        {{ content }}
+            <div class="col-xs-offset-1 col-xs-12">{{ content }}</div>
         </div>
       </div>
     </div>

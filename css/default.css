@@ -16,6 +16,7 @@ body{
 }
 .content{
 	margin-top: 15px;
+	min-height: 1000px;
 }
 .author{
 	color:rgb(86, 86, 86);
@@ -33,4 +34,11 @@ body{
 .post a:hover{
 	color: #131313;
 	text-decoration: none;
+}
+.title h1{
+	text-align: center;
+}
+.postavantar{
+	position: fixed;
+	left: 40px;
 }
