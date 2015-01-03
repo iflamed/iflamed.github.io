@@ -5,19 +5,19 @@ title: 无聊编码
 <div class="col-xs-12">
 	{% for post in site.posts %}
 	<div class="post row">
-		<p class="author col-xs-2">
-			<span class="year">{{ post.date |  date: "%Y" }}</span>
+		<p class="author col-xs-1">
+			<h2 class="year">{{ post.date |  date: "%Y" }}</h2>
 			<span class="date">{{ post.date | date: "%m-%d"}}</span>
 		</p>
-		<div class="col-xs-10">
+		<div class="col-xs-11">
 			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 			<p class="excerpt">
 				{{ post.excerpt }}
 			</p>
-			<div class="btn-group btn-group-lg">
-				<button type="button" class="btn btn-default">@Category</button>
-				<button type="button" class="btn btn-default">#Tag</button>
-				<button type="button" class="btn btn-default">@share</button>
+			<div class="btn-group btn-group-lg btn-group-justified">
+				<a class="btn btn-default">@Category</a>
+				<a class="btn btn-default">#Tag</a>
+				<a class="btn btn-default">@share</a>
 			</div>
 		</div>
 	</div>
