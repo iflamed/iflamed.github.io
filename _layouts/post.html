@@ -39,11 +39,11 @@
                 <ul class="pager">
                         {% if page.previous %}
                         <li class="previous">
-                            <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 前一页</a>
+                            <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 上一页</a>
                         </li>
                         {% else %}
                         <li class="previous disabled">
-                            <a href="#">&laquo; 前一页</a>
+                            <a href="#">&laquo; 上一页</a>
                         </li>
                         {% endif %}
                         {% if page.next %}
