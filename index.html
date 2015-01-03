@@ -14,7 +14,7 @@ title: 无聊编码
 			<div class="excerpt">
 				{{ post.excerpt }}
 			</div>
-			<div class="btn-group btn-group-lg btn-group-justified">
+			<div class="btn-group">
 				<a class="btn btn-default">@Category</a>
 				<a class="btn btn-default">#Tag</a>
 				<a class="btn btn-default">@share</a>
@@ -27,20 +27,20 @@ title: 无聊编码
 		<ul class="pager">
 				{% if paginator.previous_page %}
 				<li class="previous">
-				    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+				    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 前一页</a>
 				</li>
 				{% else %}
 				<li class="previous disabled">
-					<a href="#">&laquo; Prev</a>
+					<a href="#">&laquo; 前一页</a>
 				</li>
 				{% endif %}
 				{% if paginator.next_page %}
 				<li class="next">
-				    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+				    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页 &raquo;</a>
 				</li>
 				{% else %}
 				<li class="next disabled">
-					<a href="#">Next &raquo;</a>
+					<a href="#">下一页 &raquo;</a>
 				</li>
 				{% endif %}
 			</li>
